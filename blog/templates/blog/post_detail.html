@@ -12,7 +12,7 @@
             <h3>{{post.autor}}</h3>
         </header>
         <section>
-            <p>{{post.conteudo}}</p>
+            {{ post.conteudo | safe }}
         </section>
         <footer>
             <p>{{ post.data_publicacao }}</p>
